@@ -1,0 +1,123 @@
+*::after , *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+
+button {
+    border: none;
+    width: 55px;
+    padding: 10px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+body {
+    font-size: 2em;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+
+
+.slider-img {
+   position: relative;
+   margin-bottom: 1.4em;
+}
+
+
+.slider-card {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    padding: 10px;
+}
+
+.slider-item {
+    position:absolute;
+    top: 10px;
+    transform: scale(0.77) ;
+    z-index: 11;
+}
+
+.bg {
+    position:relative;
+    top: 17px;  
+}
+
+.row {
+    position: relative;
+    top: -2.7em;
+    left: 40%;
+    z-index: 11;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.info-slider {
+    justify-content: center;
+    align-self: center;
+    background-color: blanchedalmond;
+    max-width: 50%;
+    min-height: 0;
+    height: 45vh;
+}
+
+
+.quote {
+    position: relative;
+    left: 40%;
+}
+
+
+
+
+
+.prev {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.next {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+.slider-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-txt p {
+    position: relative;
+    top: -75px;
+    margin-bottom: 1em;
+}
+
+p{
+   font-size: 0.7em;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+@media (min-width: 1000px) {
+    .slider-card {
+        flex-direction: row;
+    }
+}
